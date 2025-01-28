@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden; /* Voorkomt scrollen op de body */
+}
+
+h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 500;
+  font-size: 100px;
+}
+
+#intro {
+  z-index: 2;
+  text-align: center;
+  font-family: monospace;
+  font-size: 25px;
+  max-width: 1050px;
+  margin-top: -150px;
+  margin-bottom: 25px;
+  color: white;
+}
+
+#background {
+  position: fixed;
+  z-index: -10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./foto/peyzazh-zvezdnoe-nebo-zvezdy.jpg");
+  background-size: cover;
+}
+
+#scroll-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow-x: auto; /* Horizontaal scrollen */
+}
+
+#planets {
+  display: flex;
+  gap: 45px; /* Ruimte tussen de planeten */
+  align-items: center; /* Zorgt dat planeten verticaal gecentreerd zijn */
+}
+
+.planet {
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.planet img {
+  max-width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.planet:hover img {
+  animation: pulse 2s infinite;
+  cursor: pointer;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1); /* Begin met normale grootte */
+  }
+  50% {
+    transform: scale(1.1); /* Groter maken */
+  }
+  100% {
+    transform: scale(1); /* Terug naar normale grootte */
+  }
+}
+
+.planet p {
+  color: white;
+  margin-top: 5px;
+  font-family: monospace;
+  font-size: 25px;
+}
+
+#zon img {
+  width: 430px;
+}
+#mercurius img {
+  width: 80px;
+}
+#venus img {
+  width: 130px;
+}
+#aarde img {
+  width: 140px;
+}
+#mars img {
+  width: 110px;
+}
+#jupiter img {
+  width: 330px;
+}
+#saturnus img {
+  width: 280px;
+}
+#uranus img {
+  width: 180px;
+}
+#neptunes img {
+  width: 170px;
+}
+#pluto img {
+  width: 90px;
+}
+
+#startQuiz {
+  margin-top: 50px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: rgba(112, 29, 109, 0.847);
+  color: #fff;
+  font-family: monospace;
+  font-size: 25px;
+  border: none;
+  width: 300px;
+  height: 75px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#startQuiz:hover {
+  background-color: rgba(206, 65, 201, 0.793);
+}
+#scroll-container {
+  scrollbar-width: thin; /* Voor Firefox: dunne scrollbar */
+  scrollbar-color: rgba(112, 29, 109, 0.847) rgba(50, 0, 50); /* Thumb & Track kleuren voor Firefox */
+}
+
+#scroll-container::-webkit-scrollbar {
+  height: 12px; /* Hoogte van de horizontale scrollbar */
+}
+
+#scroll-container::-webkit-scrollbar-track {
+  background: rgba(50, 0, 50); /* Donkerpaarse achtergrond */
+  border-radius: 10px; /* Mooie afgeronde hoeken */
+}
+
+#scroll-container::-webkit-scrollbar-thumb {
+  background-color: rgba(112, 29, 109, 0.847); /* Paarse schuifbalk */
+  border-radius: 10px; /* Afronding voor de schuifbalk */
+  border: 2px solid rgba(50, 0, 50); /* Donkere rand voor meer contrast */
+}
+
+#scroll-container::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(
+    206,
+    65,
+    201,
+    0.793
+  ); /* Lichtere paarse kleur bij hover */
+}

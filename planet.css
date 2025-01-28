@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  overflow: hidden;
+}
+h1 {
+  color: white;
+  margin-left: 25%;
+  display: flex;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 400;
+  font-size: 100px;
+}
+.planet-container {
+  width: 10px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 450px;
+  margin-left: 850px;
+  cursor: grab;
+}
+
+#planet-3d-model img {
+  width: 30px;
+  height: 30px;
+}
+
+.planet-info {
+  margin-left: -700px;
+  border-color: purple;
+}
+
+.planet-info h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.short-info,
+.long-info {
+  margin-bottom: 20px;
+}
+
+.short-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  max-width: 550px;
+  max-height: 250px;
+}
+.short-info p {
+  padding-left: 15px;
+}
+.info-box {
+  background-color: rgba(128, 0, 128, 0.34);
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.info-box h2 {
+  font-size: 18px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 100;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.info-box p {
+  font-size: 16px;
+  font-family: monospace;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.info-box img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.long-info {
+  background-color: rgba(128, 0, 128, 0.34);
+  color: white;
+  font-family: monospace;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 10px;
+  width: 500px;
+  margin-bottom: 10px;
+}
+.long-info h2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 100;
+}
+.long-info p {
+  padding-left: 15px;
+}
+.roundButton {
+  margin-top: 50px;
+  margin-left: 50px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: rgba(128, 0, 128, 0.34);
+  color: white;
+  border: none;
+  font-size: 60px;
+  cursor: pointer;
+  z-index: 3000;
+}
+
+.roundButton:hover {
+  background-color: rgba(224, 65, 224, 0.34);
+}

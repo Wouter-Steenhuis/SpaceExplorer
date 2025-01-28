@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planet Information</title>
+  <link rel="stylesheet" href="planet.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.157.0/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three/examples/js/controls/OrbitControls.js"></script>
+</head>
+<body>
+  <button id="backButton" class="roundButton">&#8249;</button>
+  <h1>Mars</h1>
+  <div class="planet-container">
+    <div id="planet-3d-model">
+
+    </div> 
+      
+    <div class="planet-info">
+      <div class="short-info">
+        <div class="info-box">
+          <img src="foto/weather.png" alt="termometer">
+          <h2>Temperatuur</h2>
+          <p>+27°C overdag</p>
+          <p>-133°C snachts</p>
+        </div>
+        <div class="info-box">
+          <img src="foto/moon.png" alt="maan">
+          <h2>Manen</h2>
+          <p>2</p>
+        </div>
+        <div class="info-box">
+          <img src="foto/clock.png" alt="dag">
+          <h2>Lengte van een dag</h2>
+          <p>1 d 0 u 37 m</p>
+        </div>
+        <div class="info-box">
+          <img src="foto/maximize.png" alt="Diameter">
+          <h2>Diameter</h2>
+          <p>3.389,5 km</p>
+        </div>
+      </div>
+      
+      <div class="long-info">
+        <h2>Beschrijving</h2>
+        <p>
+            Mars, de vierde planeet vanaf de zon gezien, is een rotsachtige wereld met een dunne atmosfeer. Het oppervlak van Mars is gevarieerd, met kraters, vulkanen, valleien en uitgestrekte woestijnen. De atmosfeer van de planeet bestaat hoofdzakelijk uit koolstofdioxide, met sporen van andere gassen zoals stikstof en argon. Ooit was er water op Mars, wat suggereert dat de planeet in het verleden mogelijk gunstige omstandigheden had voor het ontstaan van leven. Tegenwoordig bestaat water voornamelijk als ijs, met name in de polaire ijskappen. Mars is een fascinerende bestemming voor ruimteverkenning, met verschillende missies die zijn ontworpen om het oppervlak te bestuderen en te zoeken naar tekenen van leven. Toekomstige plannen omvatten mogelijk het sturen van mensen naar Mars, hoewel dit uitdagende technologische en logistieke hindernissen met zich mee zal brengen.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <script type="module" src="planet.js"></script>
+</body>
+</html>

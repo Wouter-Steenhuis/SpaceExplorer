@@ -7,9 +7,9 @@ const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerH
 
 let object;
 let controls;
-let isInteracting = false; // Om te controleren of de gebruiker interactie heeft
-let isRotating = true; // De automatische rotatie
-let rotationSpeed = 0.001; // Rotatiesnelheid wanneer niet interactief
+let isInteracting = false; 
+let isRotating = true; 
+let rotationSpeed = 0.001;
 let previousMousePosition = { x: 0, y: 0 };
 
 const loader = new GLTFLoader();
@@ -56,29 +56,28 @@ controls.enabled = true;
 
 camera.position.z = 500;
 
-// Eventlisteners voor interactie
+
 renderer.domElement.addEventListener("mousedown", (event) => {
-    isInteracting = true; // Gebruiker is interactief
-    isRotating = false;   // Stop automatische rotatie
+    isInteracting = true; 
+    isRotating = false;  
     previousMousePosition = { x: event.clientX, y: event.clientY };
 });
 
 renderer.domElement.addEventListener("mousemove", (event) => {
     if (isInteracting) {
-        // Als de muis beweegt en de gebruiker interactief is, stop de automatische rotatie
         isRotating = false;
     }
 });
 
 renderer.domElement.addEventListener("mouseup", () => {
-    isInteracting = false; // Gebruiker stopt met interactie
-    isRotating = true;     // Zet automatische rotatie weer aan
+    isInteracting = false; 
+    isRotating = true;  
 });
 
 renderer.domElement.addEventListener("wheel", () => {
     if (controls.enableZoom) {
-        isInteracting = true; // Inzoomen is ook interactie
-        isRotating = false;   // Stop de automatische rotatie
+        isInteracting = true; 
+        isRotating = false;
     }
 });
 
@@ -86,7 +85,6 @@ const animate = () => {
     requestAnimationFrame(animate);
 
     if (isRotating && object) {
-        // Voeg automatische rotatie toe wanneer de gebruiker niet interactief is
         object.rotation.y += rotationSpeed;
     }
 

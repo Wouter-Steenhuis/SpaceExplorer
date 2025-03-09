@@ -6,7 +6,7 @@ body {
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  overflow: hidden; /* Voorkomt scrollen op de body */
+  overflow: hidden;
 }
 
 h1 {
@@ -42,13 +42,13 @@ h1 {
   justify-content: center;
   align-items: center;
   width: 100%;
-  overflow-x: auto; /* Horizontaal scrollen */
+  overflow-x: auto;
 }
 
 #planets {
   display: flex;
-  gap: 45px; /* Ruimte tussen de planeten */
-  align-items: center; /* Zorgt dat planeten verticaal gecentreerd zijn */
+  gap: 45px;
+  align-items: center;
 }
 
 .planet {
@@ -67,13 +67,13 @@ h1 {
 }
 @keyframes pulse {
   0% {
-    transform: scale(1); /* Begin met normale grootte */
+    transform: scale(1);
   }
   50% {
-    transform: scale(1.1); /* Groter maken */
+    transform: scale(1.1);
   }
   100% {
-    transform: scale(1); /* Terug naar normale grootte */
+    transform: scale(1);
   }
 }
 
@@ -134,30 +134,25 @@ h1 {
   background-color: rgba(206, 65, 201, 0.793);
 }
 #scroll-container {
-  scrollbar-width: thin; /* Voor Firefox: dunne scrollbar */
-  scrollbar-color: rgba(112, 29, 109, 0.847) rgba(50, 0, 50); /* Thumb & Track kleuren voor Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(112, 29, 109, 0.847) rgba(50, 0, 50);
 }
 
 #scroll-container::-webkit-scrollbar {
-  height: 12px; /* Hoogte van de horizontale scrollbar */
+  height: 12px;
 }
 
 #scroll-container::-webkit-scrollbar-track {
-  background: rgba(50, 0, 50); /* Donkerpaarse achtergrond */
-  border-radius: 10px; /* Mooie afgeronde hoeken */
+  background: rgba(50, 0, 50);
+  border-radius: 10px;
 }
 
 #scroll-container::-webkit-scrollbar-thumb {
-  background-color: rgba(112, 29, 109, 0.847); /* Paarse schuifbalk */
-  border-radius: 10px; /* Afronding voor de schuifbalk */
-  border: 2px solid rgba(50, 0, 50); /* Donkere rand voor meer contrast */
+  background-color: rgba(112, 29, 109, 0.847);
+  border-radius: 10px;
+  border: 2px solid rgba(50, 0, 50);
 }
 
 #scroll-container::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(
-    206,
-    65,
-    201,
-    0.793
-  ); /* Lichtere paarse kleur bij hover */
+  background-color: rgba(206, 65, 201, 0.793);
 }

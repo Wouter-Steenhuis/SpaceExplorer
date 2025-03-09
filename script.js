@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Smooth scroll naar het midden van de aangeklikte planeet
   planets.forEach(planet => {
     planet.addEventListener('click', () => {
       const rect = planet.getBoundingClientRect();
@@ -25,4 +24,5 @@ document.addEventListener('DOMContentLoaded', function() {
   startQuizButton.addEventListener('click', function() {
     window.location.href = 'quiz.html';
   });
+
 });

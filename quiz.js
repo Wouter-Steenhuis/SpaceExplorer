@@ -111,3 +111,6 @@ function showScorePage() {
     window.location.href = newUrl;
   }, 5); 
 }
+document.getElementById("backButton").addEventListener("click", () => {
+  window.location.href = "index.html";
+})
